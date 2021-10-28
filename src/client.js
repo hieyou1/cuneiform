@@ -18,7 +18,7 @@ window.onload = async () => {
             if (!cuneiform.includes(i)) {
                 id("cuneiform").value = id("cuneiform").value.replace(new RegExp(i, "gi"), "");
             } else {
-                phonValue += `${phonetics[cuneiform.indexOf(i)]} `;
+                phonValue += `${phonetics[cuneiform.indexOf(i)]}`;
             }
         }
         id("phonetic").value = phonValue.trim();
