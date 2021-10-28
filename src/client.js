@@ -16,7 +16,7 @@ window.onload = async () => {
         let phonValue = "";
         for (let i of id("cuneiform").value) {
             if (!cuneiform.includes(i)) {
-                id("cuneiform").value = id("cuneiform").value.replace(new RegExp(`\\${i}`, "gi"), "");
+                id("cuneiform").value = id("cuneiform").value.replace(new RegExp(i, "gi"), "");
             } else {
                 phonValue += `${phonetics[cuneiform.indexOf(i)]} `;
             }
