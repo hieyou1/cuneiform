@@ -9,7 +9,7 @@ window.onload = async () => {
     id("cuneiform").onkeyup = id("cuneiform").onpaste = () => {
         id("cuneiform").value = id("cuneiform").value.toLowerCase();
         for (let i of phonetics) {
-            if (id("cuneiform").value.includes(i)) {
+            if (id("cuneiform").value.includes(i) && i != " ") {
                 id("cuneiform").value = id("cuneiform").value.replace(new RegExp(i, "gi"), cuneiform[phonetics.indexOf(i)]);
             }
         }
