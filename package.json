@@ -1,0 +1,16 @@
+{
+  "name": "cuneiform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hieyou1/cuneiform.git",
+  "author": "hieyou1 <31020711+hieyou1@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-parallel-uglify-plugin": "^2.0.0"
+  },
+  "dependencies": {
+    "copy-to-clipboard": "^3.3.1"
+  }
+}

@@ -1,4 +1,4 @@
-// import copyToClipboard from "copy-to-clipboard";
+import copyToClipboard from "copy-to-clipboard";
 const id = (eid) => {
     return document.getElementById(eid);
 };
@@ -23,10 +23,10 @@ window.onload = async () => {
         }
         id("phonetic").value = phonValue.trim();
     };
-    // id("copy-phonetic").onclick = () => {
-    //     copyToClipboard(id("phonetic").value);
-    // };
-    // id("copy-cuneiform").onclick = () => {
-    //     copyToClipboard(id("cuneiform").value);
-    // };
+    id("copy-phonetic").onclick = () => {
+        copyToClipboard(id("phonetic").value);
+    };
+    id("copy-cuneiform").onclick = () => {
+        copyToClipboard(id("cuneiform").value);
+    };
 };
